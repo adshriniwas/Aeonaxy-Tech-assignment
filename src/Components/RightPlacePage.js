@@ -7,7 +7,7 @@ const RightPlacePage = () => {
         <div className="px-8 pt-12 w-full max-w-6xl justify-center">
             {/* start of progress bar  */}
             <div className='flex items-center'>
-                <div className='mb-4 mr-3'>
+                <div className='mb-4 mr-3 cursor-pointer'>
                     <FaLessThan/>
                 </div>
                 <div className="w-full bg-gray-300 rounded-full h-1.5 mb-4 dark:bg-gray-300">
@@ -32,12 +32,11 @@ const RightPlacePage = () => {
             </div>
             {/* start of continue button  */}
             <div className="my-5 flex justify-center">
-                <a
-                    className="block px-7 py-2 rounded-md bg-black text-white"
-                    href="#"
+                <div
+                    className="block px-7 py-2 rounded-md bg-black text-white cursor-pointer"
                 >
                     Continue
-                </a>
+                </div>
             </div>
 
         </div>

@@ -1,7 +1,9 @@
 import InterestedPage from "./Components/InterestedPage";
 import Intro from "./Components/Intro";
+import MathPage from "./Components/MathPage";
 import RightPlacePage from "./Components/RightPlacePage";
-import DemoComponent from "./DemoComponent";
+import YourWayPage from "./Components/YourWayPage";
+
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Intro/>
       <InterestedPage/>
       <RightPlacePage/>
+      <MathPage/>
+      <YourWayPage/>
     </div>
   );
 }

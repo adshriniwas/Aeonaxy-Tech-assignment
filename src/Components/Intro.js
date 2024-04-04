@@ -65,12 +65,11 @@ const Intro = () => {
         </div>
 
         <div className="my-5 flex justify-center">
-          <a
-            className="block px-7 py-2 rounded-md hover:bg-black hover:text-white bg-gray-300"
-            href="#"
+          <div
+            className="block px-7 py-2 rounded-md hover:bg-black hover:text-white bg-gray-300 cursor-pointer"
           >
             Continue
-          </a>
+          </div>
         </div>
       </div>
     </div>
