@@ -24,6 +24,7 @@ const User = [
 
 const Intro = () => {
   return (
+    <>
     <div className="min-h-screen w-full flex flex-col items-center">
       <div className="px-8 pt-12 w-full max-w-6xl justify-center">
         {/* start of progress bar  */} 
@@ -73,6 +74,8 @@ const Intro = () => {
         </div>
       </div>
     </div>
+    <div className="bg-black h-[1.5px]"></div>
+    </>
   );
 };
 

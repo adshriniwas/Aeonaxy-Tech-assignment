@@ -42,6 +42,7 @@ const InterestedPage = () => {
     }
 
   return (
+    <>
     <div className="min-h-screen w-full flex flex-col items-center">
       <div className="px-8 pt-12 w-full max-w-6xl justify-center">
         {/* start of progress bar  */}
@@ -69,7 +70,7 @@ const InterestedPage = () => {
         <div className="mt-10 w-full max-w-lg m-auto">
           {interests.map((interest, ind) => {
             return (
-              <div key={ind} onClick={()=>handleClick(ind)} className={`${interest.active==true? "border-yellow-800" : "border-gray-300"} px-4 py-3 m-2 border rounded-md hover:border-gray-500 hover:shadow-md cursor-pointer  flex items-center`}>
+              <div key={ind} onClick={()=>handleClick(ind)} className={`${interest.active? "border-yellow-800" : "border-gray-300"} px-4 py-3 m-2 border rounded-md hover:border-gray-500 hover:shadow-md cursor-pointer  flex items-center`}>
                 <div>
                   <img
                     className="w-9 h-9"
@@ -95,6 +96,8 @@ const InterestedPage = () => {
         </div>
       </div>
     </div>
+    <div className="bg-black h-[1.5px]"></div>
+    </>
   )
 }
 
