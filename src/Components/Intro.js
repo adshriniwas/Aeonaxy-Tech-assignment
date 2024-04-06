@@ -1,5 +1,5 @@
 import React from "react";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const User = [
   {
@@ -25,7 +25,7 @@ const User = [
 const Intro = () => {
   return (
     <>
-    <div className="min-h-screen w-full flex flex-col items-center">
+    <div id="intro" className="min-h-screen w-full flex flex-col items-center">
       <div className="px-8 pt-12 w-full max-w-6xl justify-center">
         {/* start of progress bar  */} 
         <div className="w-full bg-gray-300 rounded-full h-1.5 mb-4 dark:bg-gray-300">
@@ -66,11 +66,12 @@ const Intro = () => {
         </div>
 
         <div className="my-5 flex justify-center">
-          <div
+          <AnchorLink
+            href="#interested"
             className="block px-7 py-2 rounded-md hover:bg-black hover:text-white bg-gray-300 cursor-pointer"
           >
             Continue
-          </div>
+          </AnchorLink>
         </div>
       </div>
     </div>

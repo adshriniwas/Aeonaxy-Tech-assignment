@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaLessThan } from "react-icons/fa6";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const initMathItems = [
     {
@@ -47,13 +48,13 @@ const MathPage = () => {
 
   return (
     <>
-    <div className="min-h-screen w-full flex flex-col items-center">
+    <div id="mathPage" className="min-h-screen w-full flex flex-col items-center">
       <div className="px-8 pt-12 w-full max-w-6xl justify-center">
         {/* start of progress bar  */}
         <div className="flex items-center">
-          <div className="mb-4 mr-3 cursor-pointer">
+          <AnchorLink href="#rightPlace" className="mb-4 mr-3 cursor-pointer">
             <FaLessThan />
-          </div>
+          </AnchorLink>
           <div className="w-full bg-gray-300 rounded-full h-1.5 mb-4 dark:bg-gray-300">
             <div
               className="bg-[#3EB489] h-1.5 rounded-full dark:bg-[#3EB489]"
@@ -86,11 +87,12 @@ const MathPage = () => {
         </div>
         {/* start of continue button  */}
         <div className="mb-5 mt-14 flex justify-center">
-                <div
+                <AnchorLink
+                    href="#yourWayPage"
                     className="block px-7 py-2 rounded-md bg-black text-white cursor-pointer"
                 >
                     Continue
-                </div>
+                </AnchorLink>
         </div>
       </div>
     </div>

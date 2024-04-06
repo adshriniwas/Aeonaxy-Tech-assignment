@@ -1,20 +1,21 @@
 import React from 'react'
 import { FaLessThan } from "react-icons/fa6";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const RightPlacePage = () => {
   return (
     <>
-    <div className="min-h-screen w-full flex flex-col items-center">
+    <div id='rightPlace' className="min-h-screen w-full flex flex-col items-center">
         <div className="px-8 pt-12 w-full max-w-6xl justify-center">
             {/* start of progress bar  */}
             <div className='flex items-center'>
-                <div className='mb-4 mr-3 cursor-pointer'>
+                <AnchorLink href='#interested' className='mb-4 mr-3 cursor-pointer'>
                     <FaLessThan/>
-                </div>
+                </AnchorLink>
                 <div className="w-full bg-gray-300 rounded-full h-1.5 mb-4 dark:bg-gray-300">
                     <div
                         className="bg-[#3EB489] h-1.5 rounded-full dark:bg-[#3EB489]"
-                        style={{ width: "33%" }}
+                        style={{ width: "40%" }}
                     ></div>
                 </div>
             </div>
@@ -33,11 +34,12 @@ const RightPlacePage = () => {
             </div>
             {/* start of continue button  */}
             <div className="my-5 flex justify-center">
-                <div
+                <AnchorLink
+                href='#mathPage'
                     className="block px-7 py-2 rounded-md bg-black text-white cursor-pointer"
                 >
                     Continue
-                </div>
+                </AnchorLink>
             </div>
 
         </div>
